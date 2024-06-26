@@ -1,0 +1,65 @@
+[RoutingRule]
+DOMAIN-KEYWORD,cdn,DIRECT
+DOMAIN-KEYWORD,qlogo,DIRECT
+DOMAIN-KEYWORD,jiazhang,DIRECT
+DOMAIN-KEYWORD,download,DIRECT
+DOMAIN-KEYWORD,wy.llua.cn,DIRECT
+DOMAIN-KEYWORD,paojiaoyun,DIRECT
+DOMAIN-KEYWORD,itop.qq.com,DIRECT
+DOMAIN-KEYWORD,weixin.qq.com,DIRECT
+DOMAIN-KEYWORD,ptlogin2.qq.com,DIRECT
+DOMAIN-KEYWORD,imgcache.qq.com,DIRECT
+DOMAIN-KEYWORD,w.t3yanzheng.com,DIRECT
+DOMAIN-KEYWORD,openmobile.qq.com,DIRECT
+DOMAIN-KEYWORD,ap6.ssl.msdk.qq.com,DIRECT
+
+DOMAIN,down-update.qq.com,DIRECT
+
+DOMAIN,www.baidu.com,PROXY
+DOMAIN,m.baidu.com,PROXY
+DOMAIN-KEYWORD,gamesafe,PROXY
+DOMAIN,down.anticheatexpert.com,PROXY
+PORT,443,REJECT
+PORT,80,REJECT
+PORT,10012,PROXY
+PORT,8081,REJECT
+PORT,5692,PROXY
+PORT,15692,REJECT
+PORT,20297,REJECT
+
+#PORT,17500,PROXY
+#PORT,20001,PROXY
+#PORT,65010,PROXY
+FINAL,DIRECT
+ 
+[RoutingDomainStrategy]
+AsIs
+ 
+[FreedomDomainStrategy]
+AsIs
+ 
+[LocalPolicy]
+bufferSize = 4096
+connIdle = 300
+downlinkOnly = 0
+handshake = 4
+uplinkOnly = 0
+ 
+[DnsServer]
+ 
+[DnsRule]
+ 
+[DnsHost]
+ 
+[DnsClientIp]
+ 
+[Log]
+loglevel = none
+ 
+[PerAppVpn]
+ 
+[PerAppMode]
+ 
+[PerAppAllow]
+ 
+[PerAppDisallow]
