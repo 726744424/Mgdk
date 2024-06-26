@@ -33,7 +33,7 @@ PORT,20297,REJECT
 FINAL,DIRECT
  
 [RoutingDomainStrategy]
-AsIs
+一个
  
 [FreedomDomainStrategy]
 AsIs
